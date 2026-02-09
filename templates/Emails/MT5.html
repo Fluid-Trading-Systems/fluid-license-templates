@@ -1,13 +1,157 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <h2>Fluid Trading Systems</h2>
+Your MetaTrader 5 Indicator – Download & Setup.
 
-  <p>Thank you for your purchase.</p>
 
-  <p><strong>Your license key:</strong></p>
-  <p>{{LICENSE_KEY}}</p>
+Hi there,
 
-  <p>Installation instructions will follow.</p>
-</body>
-</html>
+Thank you for your purchase from Fluid Trading Systems.
+
+Follow the steps below to download, install, and activate your MT5 Indicators.
+
+
+⬇️ Download & Install (MetaTrader 5)-
+
+Download the indicator / EA file from Store → My Purchases → Downloads
+(save it to Downloads / Desktop / personal folder)
+
+Open MetaTrader 5
+
+Click File → Open Data Folder
+
+Open MQL5 → Indicators
+→ Drag the indicator file into this folder
+
+Open MQL5 → Experts
+→ Drag the EA file into this folder (if included)
+
+Restart MetaTrader 5 when prompted
+(or right-click inside Navigator → Refresh)
+
+In MT5 Navigator:
+
+Indicators → drag the indicator onto the chart
+
+Expert Advisors → drag the EA onto the chart (if required)
+
+
+📊 Chart Requirement (Important)-
+
+
+The indicator works on any chart timeframe
+
+For best results, use active / liquid instruments
+
+The EA (if included) must be running for the indicator to function
+
+
+⚙️ Indicator Inputs (MetaTrader 5 – Quick Guide)-
+
+ATR Base Period:
+Number of bars used to measure volatility.
+
+ATR Base Multiplier:
+Controls how far the trail sits from price.
+
+
+Compression-
+
+Compression Lookback:
+How many recent bars are checked for low-volatility conditions.
+
+Compression Threshold Multiplier:
+Defines how tight price must be to block signals during compression.
+
+
+Flip / Spatial-
+
+Enable Spatial Buffer:
+Prevents flips that occur too close to the current trail.
+
+Minimum Flip Distance (pips):
+Minimum distance price must move before a flip is allowed.
+
+Strength-
+
+Strength Buffer Size:
+Number of recent bars used to confirm directional pressure.
+
+Dynamic Strength Period:
+Controls how long strength must persist before a flip is triggered.
+
+Strength Decay Rate:
+How quickly older strength influence fades (higher = smoother).
+
+Regime-
+
+Volatility Sensitivity Base:
+Adjusts behaviour between slow and fast market conditions.
+
+Base Flip Threshold:
+Minimum strength required to change direction.
+
+Min Flip Threshold:
+Hard lower limit to prevent weak or noisy flips.
+
+🔑 License Activation-
+
+Load the EA first (if included)
+Enter your License Key
+Enable:
+
+✅ Allow Algo Trading
+
+✅ Allow WebRequest
+Add this URL:
+https://fluid-license.fluidtradingsystems.workers.dev
+
+Click OK, then reload the chart if needed
+
+⚙️ Recommended Defaults (You May Adjust)-
+
+These settings are well-balanced starting points.
+You may adjust them, but most users should leave these unchanged.
+
+Fixed Defaults:
+
+ATR Base Period: 14
+ATR Base Multiplier: 1.5
+Enable Spatial Buffer: ON
+Minimum Flip Distance: 0.5
+Compression Lookback: 15
+Compression Multiplier: 0.5
+Volatility Sensitivity Base: 1.1 – 1.2
+Base / Min Flip Threshold: 1.0 – 1.1
+
+⚙️ Strength Presets (Time-Based Charts – MT5)-
+
+Use these as recommended starting points based on how fast the market moves on your chosen timeframe.
+
+🔹 Fast / Scalping (M1 – M2)
+Strength Buffer Size: 6
+Dynamic Strength Period: 12
+More responsive, quicker flips
+
+🔹 Balanced Intraday (M3 – M5)
+Strength Buffer Size: 7
+Dynamic Strength Period: 14
+Clean balance between speed and confirmation
+
+🔹 Smooth Intraday (M10 – M15)
+Strength Buffer Size: 8
+Dynamic Strength Period: 16
+Reduced noise, stronger trend filtering
+
+🔹 Swing / Structure (M30 – H1)
+Strength Buffer Size: 9
+Dynamic Strength Period: 18
+Strong bias, minimal false signals
+
+
+🛠 Support-
+
+If you have any questions or issues, contact us at:
+📧 support@fluidtradingsystems.com
+
+
+
+
+
