@@ -1,13 +1,185 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <h2>Fluid Trading Systems</h2>
+Your NinjaTrader Indicator – Download & Setup.
 
-  <p>Thank you for your purchase.</p>
+Hi there,👋
 
-  <p><strong>Your license key:</strong></p>
-  <p>{{LICENSE_KEY}}</p>
+Thank you for your purchase from Fluid Trading Systems.🤝
 
-  <p>Installation instructions will follow.</p>
-</body>
-</html>
+Follow the steps below to download, install, and activate your NinjaTrader indicators.⬇️
+
+
+⬇️ Download & Install (NinjaTrader 8)-
+
+Download the file from Store → My Purchases → Downloads
+
+Open NinjaTrader 8
+
+Go to Tools → Import → NinjaScript Add-On
+
+In the window that opens, browse to where you saved the file
+(Downloads / Desktop / personal folder)
+
+Select the file and click Open
+
+Restart NinjaTrader when prompted
+
+Add the indicator to a chart
+
+
+📊 Chart Requirement (Important)-
+
+This indicator requires a Tick Chart
+
+Common setups: 10, 20, 50, 100 tick
+
+Time-based charts are not supported
+
+
+⚙️ Recommended Defaults (You May Adjust)-
+
+These settings are well-balanced starting points.
+You can change them, but most users should leave these as-is.
+
+🔹ATR-
+
+ATR Base Period: 14
+
+ATR Base Multiplier: 1.5
+
+
+🔹Spatial Buffer-
+
+Enable Spatial Buffer: ON
+
+Minimum Flip Distance: 0.5
+
+
+🔹Compression Filter-
+
+Compression Lookback Period: 15
+
+Compression Threshold Multiplier: 0.5
+
+
+🔹Regime / Strength Thresholds-
+
+Volatility Sensitivity Base: 1.1 – 1.2
+
+Base Flip Threshold: 1.0 – 1.1
+
+Min Flip Threshold Clamp: 1.0 – 1.1
+
+
+📊 Strength Buffer Size Recommendations (by Tick Chart)-
+
+These values scale naturally with tick size and control responsiveness vs stability.
+
+🔹 10-Tick-
+
+Strength Buffer Size: 6
+
+Dynamic Strength Period: 12
+
+Fast response, higher trade frequency
+
+🔹 20-Tick-
+
+Strength Buffer Size: 7
+
+Dynamic Strength Period: 14
+
+Balanced and clean (recommended default)
+
+🔹 50-Tick-
+
+Strength Buffer Size: 8
+
+Dynamic Strength Period: 16
+
+Smoother trends, fewer false flips
+
+🔹 100-Tick-
+
+Strength Buffer Size: 9
+
+Dynamic Strength Period: 18
+
+Strong trend bias, minimal noise
+
+
+🔑 License Activation-
+
+When loading the indicator, enter your License Key
+
+An internet connection is required for license verification
+
+Licenses are device-locked
+
+
+⚙️ Indicator Parameters (Quick Guide)-  
+
+License Key:
+Activates the indicator on your device.
+
+🔹ATR-
+
+ATR Base Period:
+Number of bars used to measure volatility.
+
+ATR Base Multiplier:
+Controls how close or wide the trail sits from price.
+
+🔹Compression-
+
+Compression Lookback Period:
+How many recent bars are checked for low-volatility compression.
+
+Compression Threshold Multiplier:
+Defines how tight price must be to block false flips during compression.
+
+🔹Flip / Spatial-
+
+Enable Spatial Buffer:
+Prevents flips that occur too close to the existing trail.
+
+Minimum Flip Distance (pips):
+Minimum distance price must move before a flip is allowed.
+
+🔹Strength-
+
+Strength Buffer Size:
+How many recent bars are used to confirm directional pressure.
+
+Dynamic Strength Period:
+Controls how long trend strength must persist before flipping.
+
+Strength Decay Rate:
+How quickly older strength influence fades (higher = smoother).
+
+🔹Regime-
+
+Volatility Sensitivity Base:
+Adjusts behaviour between slow and fast market conditions.
+
+Base Flip Threshold:
+Minimum strength required to trigger a direction change.
+
+Min Flip Threshold Clamp:
+Hard lower limit to prevent weak or noisy flips.
+
+🔹Fixed Stop Loss-
+
+Enable Fixed SL:
+Turns the ATR-based stop loss on or off.
+
+Fixed SL ATR Period:
+ATR length used to calculate the stop loss.
+
+Fixed SL Multiplier:
+Distance of the stop from price based on ATR.
+
+
+🛠 Support-
+
+If you need help at any stage, contact us at:
+📧 support@fluidtradingsystems.com
+
